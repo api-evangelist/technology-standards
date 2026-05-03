@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "std": "https://raw.githubusercontent.com/api-evangelist/technology-standards/main/json-ld/technology-standards-context.jsonld#",
+    "schema": "https://schema.org/",
+
+    "Standard": "schema:TechArticle",
+    "standardId": "schema:identifier",
+    "standardName": "schema:name",
+    "standardDescription": "schema:description",
+    "standardNumber": "schema:legislationIdentifier",
+    "standardStatus": "std:status",
+    "standardUrl": "schema:url",
+
+    "StandardsBody": "schema:Organization",
+    "bodyName": "schema:name",
+    "bodyAcronym": "schema:alternateName",
+    "bodyUrl": "schema:url",
+    "bodyMission": "schema:description",
+
+    "WorkingGroup": "schema:Organization",
+    "groupName": "schema:name",
+    "groupCharter": "schema:description",
+    "parentBody": "schema:parentOrganization",
+
+    "RFC": "std:RFC",
+    "rfcNumber": "schema:identifier",
+    "rfcTitle": "schema:name",
+    "rfcAuthors": "schema:author",
+    "rfcDate": "schema:datePublished",
+    "rfcStatus": "std:rfcStatus",
+    "rfcUrl": "schema:url",
+    "obsoletes": "std:obsoletes",
+    "updatedBy": "std:updatedBy",
+
+    "Protocol": "std:Protocol",
+    "protocolName": "schema:name",
+    "protocolPort": "std:port",
+    "protocolScheme": "std:scheme",
+    "protocolRfc": "std:rfc",
+    "protocolVersion": "schema:version",
+
+    "SecurityStandard": "std:SecurityStandard",
+    "securityStandardName": "schema:name",
+    "authorizationFlows": "std:authorizationFlows",
+    "tokenTypes": "std:tokenTypes",
+    "scopes": "std:scopes",
+
+    "Conformance": "std:Conformance",
+    "conformanceLevel": "std:level",
+    "requirement": "std:requirement",
+    "requirementKeyword": "std:keyword",
+
+    "Implementation": "schema:SoftwareApplication",
+    "implementationName": "schema:name",
+    "implementationType": "std:implementationType",
+    "implementationLanguage": "schema:programmingLanguage",
+    "conformanceLevel": "std:conformanceLevel"
+  }
+}

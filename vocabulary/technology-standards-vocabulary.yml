@@ -1,0 +1,182 @@
+name: Technology Standards Vocabulary
+description: >-
+  Domain vocabulary for technology standards development, standards bodies, and the
+  normative frameworks that govern internet protocols, API security, and data exchange.
+tags:
+  - IEEE
+  - IETF
+  - ISO
+  - Protocols
+  - Standards
+  - Technology Standards
+  - W3C
+created: '2026-05-03'
+modified: '2026-05-03'
+terms:
+  - term: Standard
+    definition: >-
+      A formal, authoritative document developed and maintained by a recognized
+      standards body that defines requirements, guidelines, or characteristics
+      for technologies, systems, or processes to ensure interoperability,
+      quality, and consistency.
+    synonyms:
+      - Technical Standard
+      - Normative Standard
+    relatedTerms:
+      - Standards Body
+      - RFC
+
+  - term: RFC
+    definition: >-
+      Request for Comments - the publication format of the IETF. RFCs define
+      internet protocols and best practices. Progresses from Internet Draft to
+      Proposed Standard to Internet Standard. Each RFC is immutable; updates
+      are handled via new RFCs that update or obsolete earlier ones.
+    synonyms:
+      - Request for Comments
+      - Internet Standard
+    relatedTerms:
+      - IETF
+      - BCP
+
+  - term: IETF
+    definition: >-
+      Internet Engineering Task Force - the principal technical body for developing
+      internet protocol standards. IETF operates through working groups and publishes
+      standards as RFCs. Key API-related RFCs include OAuth 2.0 (RFC 6749), HTTP
+      Semantics (RFC 9110), JWT (RFC 7519), and JSON (RFC 8259).
+    synonyms:
+      - Internet Engineering Task Force
+    relatedTerms:
+      - RFC
+      - BCP
+      - Working Group
+
+  - term: W3C
+    definition: >-
+      World Wide Web Consortium - the international standards organization for the
+      World Wide Web. W3C standards (called Recommendations) govern web technologies
+      including HTML, CSS, XML, RDF, JSON-LD, CORS, and WebAuthn.
+    synonyms:
+      - World Wide Web Consortium
+    relatedTerms:
+      - Recommendation
+      - Working Group
+
+  - term: IEEE
+    definition: >-
+      Institute of Electrical and Electronics Engineers - a professional organization
+      that develops standards for electronics, electrical engineering, and computer
+      science. IEEE 802 standards govern networking and wireless communications.
+    synonyms:
+      - Institute of Electrical and Electronics Engineers
+    relatedTerms:
+      - Standard
+
+  - term: OASIS
+    definition: >-
+      Organization for the Advancement of Structured Information Standards - a
+      nonprofit standards consortium that produces web services, cybersecurity,
+      and IoT standards. OASIS standards include SAML, WS-Security, OData,
+      MQTT, and AMQP.
+    synonyms:
+      - Organization for the Advancement of Structured Information Standards
+    relatedTerms:
+      - SAML
+      - AMQP
+      - OData
+
+  - term: OAuth 2.0
+    definition: >-
+      An authorization framework (RFC 6749) that enables third-party applications
+      to obtain limited access to user accounts on HTTP services. Defines
+      authorization flows including Authorization Code, Client Credentials,
+      Device Code, and Implicit (deprecated). The foundation of modern API security.
+    synonyms:
+      - OAuth2
+      - Open Authorization
+    relatedTerms:
+      - OpenID Connect
+      - JWT
+      - Bearer Token
+
+  - term: OpenID Connect
+    definition: >-
+      An identity layer built on top of OAuth 2.0 that allows clients to verify
+      user identity and obtain basic profile information. Adds ID tokens (JWT) to
+      the OAuth 2.0 authorization code flow.
+    synonyms:
+      - OIDC
+    relatedTerms:
+      - OAuth 2.0
+      - JWT
+
+  - term: JWT
+    definition: >-
+      JSON Web Token (RFC 7519) - a compact, URL-safe means of representing claims
+      between two parties. Consists of header, payload, and signature. Used as
+      bearer tokens in OAuth 2.0 and as ID tokens in OpenID Connect.
+    synonyms:
+      - JSON Web Token
+      - Bearer Token
+    relatedTerms:
+      - OAuth 2.0
+      - OpenID Connect
+
+  - term: SAML
+    definition: >-
+      Security Assertion Markup Language - an XML-based open standard for exchanging
+      authentication and authorization data between identity providers and service
+      providers. Commonly used for enterprise single sign-on (SSO).
+    synonyms:
+      - Security Assertion Markup Language
+    relatedTerms:
+      - OAuth 2.0
+      - OpenID Connect
+
+  - term: TLS
+    definition: >-
+      Transport Layer Security - the cryptographic protocol that provides secure
+      communications over a network. TLS 1.3 (RFC 8446) is the current version.
+      Required for all HTTPS connections and forms the security foundation for APIs.
+    synonyms:
+      - Transport Layer Security
+      - SSL/TLS
+    relatedTerms:
+      - HTTPS
+
+  - term: HTTP
+    definition: >-
+      HyperText Transfer Protocol - the foundation of data communication on the Web.
+      HTTP/1.1 (RFC 7230-7235, superseded by RFC 9110-9114), HTTP/2 (RFC 9113), and
+      HTTP/3 (RFC 9114) define the current state of web communication.
+    synonyms:
+      - HyperText Transfer Protocol
+      - HTTP/2
+      - HTTP/3
+    relatedTerms:
+      - REST
+      - TLS
+
+  - term: Interoperability
+    definition: >-
+      The ability of different systems, devices, applications, or products to
+      communicate and work together effectively. The primary purpose of technology
+      standards is to ensure interoperability.
+    synonyms:
+      - Interop
+    relatedTerms:
+      - Standard
+      - Conformance
+
+  - term: Working Group
+    definition: >-
+      A focused group within a standards body responsible for developing one or more
+      specific standards. IETF Working Groups operate on specific chartered work items;
+      W3C Working Groups produce Recommendations.
+    synonyms:
+      - WG
+      - Technical Committee
+    relatedTerms:
+      - IETF
+      - W3C
