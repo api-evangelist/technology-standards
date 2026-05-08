@@ -49,6 +49,8 @@ apis:
         url: https://www.ietf.org/
       - type: API
         url: https://datatracker.ietf.org/api/v1/
+      - url: openapi/technology-standards-openapi.yml
+        type: OpenAPI
   - aid: technology-standards:w3c-standards
     name: W3C Web Standards
     description: >-
