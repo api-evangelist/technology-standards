@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: IETF Datatracker API — People
+  description: 'IETF Datatracker API — People. 1 operations. Lead operation: List persons. Self-contained Naftiko capability
+    covering one Technology Standards business surface.'
+  tags:
+  - Technology Standards
+  - People
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    TECHNOLOGY_STANDARDS_API_KEY: TECHNOLOGY_STANDARDS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: technology-standards-people
+    baseUri: https://datatracker.ietf.org/api/v1
+    description: IETF Datatracker API — People business capability. Self-contained, no shared references.
+    resources:
+    - name: person
+      path: /person/
+      operations:
+      - name: listpersons
+        method: GET
+        description: List persons
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: technology-standards-people-rest
+    port: 8080
+    description: REST adapter for IETF Datatracker API — People. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/person
+      name: person
+      description: REST surface for person.
+      operations:
+      - method: GET
+        name: listpersons
+        description: List persons
+        call: technology-standards-people.listpersons
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: technology-standards-people-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for IETF Datatracker API — People. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: list-persons
+      description: List persons
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: technology-standards-people.listpersons
+      outputParameters:
+      - type: object
+        mapping: $.

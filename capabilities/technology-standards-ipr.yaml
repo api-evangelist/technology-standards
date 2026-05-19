@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: IETF Datatracker API — IPR
+  description: 'IETF Datatracker API — IPR. 1 operations. Lead operation: List IPR disclosures. Self-contained Naftiko capability
+    covering one Technology Standards business surface.'
+  tags:
+  - Technology Standards
+  - IPR
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    TECHNOLOGY_STANDARDS_API_KEY: TECHNOLOGY_STANDARDS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: technology-standards-ipr
+    baseUri: https://datatracker.ietf.org/api/v1
+    description: IETF Datatracker API — IPR business capability. Self-contained, no shared references.
+    resources:
+    - name: ipr
+      path: /ipr/
+      operations:
+      - name: listiprdisclosures
+        method: GET
+        description: List IPR disclosures
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: technology-standards-ipr-rest
+    port: 8080
+    description: REST adapter for IETF Datatracker API — IPR. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/ipr
+      name: ipr
+      description: REST surface for ipr.
+      operations:
+      - method: GET
+        name: listiprdisclosures
+        description: List IPR disclosures
+        call: technology-standards-ipr.listiprdisclosures
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: technology-standards-ipr-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for IETF Datatracker API — IPR. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: list-ipr-disclosures
+      description: List IPR disclosures
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: technology-standards-ipr.listiprdisclosures
+      outputParameters:
+      - type: object
+        mapping: $.

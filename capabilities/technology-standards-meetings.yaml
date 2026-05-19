@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: IETF Datatracker API — Meetings
+  description: 'IETF Datatracker API — Meetings. 1 operations. Lead operation: List IETF meetings. Self-contained Naftiko
+    capability covering one Technology Standards business surface.'
+  tags:
+  - Technology Standards
+  - Meetings
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    TECHNOLOGY_STANDARDS_API_KEY: TECHNOLOGY_STANDARDS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: technology-standards-meetings
+    baseUri: https://datatracker.ietf.org/api/v1
+    description: IETF Datatracker API — Meetings business capability. Self-contained, no shared references.
+    resources:
+    - name: meeting
+      path: /meeting/
+      operations:
+      - name: listmeetings
+        method: GET
+        description: List IETF meetings
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: technology-standards-meetings-rest
+    port: 8080
+    description: REST adapter for IETF Datatracker API — Meetings. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/meeting
+      name: meeting
+      description: REST surface for meeting.
+      operations:
+      - method: GET
+        name: listmeetings
+        description: List IETF meetings
+        call: technology-standards-meetings.listmeetings
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: technology-standards-meetings-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for IETF Datatracker API — Meetings. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: list-ietf-meetings
+      description: List IETF meetings
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: technology-standards-meetings.listmeetings
+      outputParameters:
+      - type: object
+        mapping: $.

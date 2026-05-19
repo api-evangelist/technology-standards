@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: IETF Datatracker API — Reference
+  description: 'IETF Datatracker API — Reference. 1 operations. Lead operation: List name/enum reference values. Self-contained
+    Naftiko capability covering one Technology Standards business surface.'
+  tags:
+  - Technology Standards
+  - Reference
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    TECHNOLOGY_STANDARDS_API_KEY: TECHNOLOGY_STANDARDS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: technology-standards-reference
+    baseUri: https://datatracker.ietf.org/api/v1
+    description: IETF Datatracker API — Reference business capability. Self-contained, no shared references.
+    resources:
+    - name: name
+      path: /name/
+      operations:
+      - name: listnames
+        method: GET
+        description: List name/enum reference values
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: technology-standards-reference-rest
+    port: 8080
+    description: REST adapter for IETF Datatracker API — Reference. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/name
+      name: name
+      description: REST surface for name.
+      operations:
+      - method: GET
+        name: listnames
+        description: List name/enum reference values
+        call: technology-standards-reference.listnames
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: technology-standards-reference-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for IETF Datatracker API — Reference. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: list-name-enum-reference-values
+      description: List name/enum reference values
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: technology-standards-reference.listnames
+      outputParameters:
+      - type: object
+        mapping: $.

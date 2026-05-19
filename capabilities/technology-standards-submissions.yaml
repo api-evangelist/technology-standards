@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: IETF Datatracker API — Submissions
+  description: 'IETF Datatracker API — Submissions. 1 operations. Lead operation: List document submissions. Self-contained
+    Naftiko capability covering one Technology Standards business surface.'
+  tags:
+  - Technology Standards
+  - Submissions
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    TECHNOLOGY_STANDARDS_API_KEY: TECHNOLOGY_STANDARDS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: technology-standards-submissions
+    baseUri: https://datatracker.ietf.org/api/v1
+    description: IETF Datatracker API — Submissions business capability. Self-contained, no shared references.
+    resources:
+    - name: submit
+      path: /submit/
+      operations:
+      - name: listsubmissions
+        method: GET
+        description: List document submissions
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: technology-standards-submissions-rest
+    port: 8080
+    description: REST adapter for IETF Datatracker API — Submissions. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/submit
+      name: submit
+      description: REST surface for submit.
+      operations:
+      - method: GET
+        name: listsubmissions
+        description: List document submissions
+        call: technology-standards-submissions.listsubmissions
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: technology-standards-submissions-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for IETF Datatracker API — Submissions. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: list-document-submissions
+      description: List document submissions
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: technology-standards-submissions.listsubmissions
+      outputParameters:
+      - type: object
+        mapping: $.
