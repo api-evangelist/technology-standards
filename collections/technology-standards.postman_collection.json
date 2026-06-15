@@ -1,0 +1,1112 @@
+{
+  "item": [
+    {
+      "id": "f4dccdec-2439-4e65-ab5f-93ce9cafc1d5",
+      "name": "Documents",
+      "description": {
+        "content": "Internet-Drafts, RFCs, and document events",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a32b6331-3dc8-4655-bbab-09b4e2738ee9",
+          "name": "List documents",
+          "request": {
+            "name": "List documents",
+            "description": {},
+            "url": {
+              "path": [
+                "doc",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "format",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b0546c17-d655-464b-bb42-7a6824e067a5",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "doc",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0b24af53-875c-45c6-b02c-198c3faa5bf4",
+          "name": "List document records",
+          "request": {
+            "name": "List document records",
+            "description": {},
+            "url": {
+              "path": [
+                "doc",
+                "document",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "07944c15-9c80-49fa-894d-1e7406d566a9",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "doc",
+                    "document",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a59ec5d7-13d0-46f0-bd09-1d6a5a514b9d",
+          "name": "List document events",
+          "request": {
+            "name": "List document events",
+            "description": {},
+            "url": {
+              "path": [
+                "doc",
+                "docevent",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8d518980-e036-45bd-afcc-2dacd0cc2337",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "doc",
+                    "docevent",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "616db873-4493-4c8b-9b5b-e17fa67a8db6",
+      "name": "Groups",
+      "description": {
+        "content": "Working groups, research groups, and other IETF groups",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8e554eb1-dfce-43c3-ab91-68e345f3a80f",
+          "name": "List groups (working groups, areas, etc.)",
+          "request": {
+            "name": "List groups (working groups, areas, etc.)",
+            "description": {},
+            "url": {
+              "path": [
+                "group",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c94b9f4e-9871-480f-a1b1-0272a65c9087",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "group",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "39d5718f-f1ef-44d4-89ce-4460368d58dc",
+      "name": "Meetings",
+      "description": {
+        "content": "IETF meetings and sessions",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b3284a05-2c0b-4d2e-adef-51d58283e61d",
+          "name": "List IETF meetings",
+          "request": {
+            "name": "List IETF meetings",
+            "description": {},
+            "url": {
+              "path": [
+                "meeting",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "71a6830e-6f58-4a3c-b3c9-295b782fc7f9",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meeting",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "33498d3d-8ec9-48e4-8722-b5d48fd7832a",
+      "name": "People",
+      "description": {
+        "content": "People in the IETF community",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "86db42aa-c5f6-4049-b3d7-0bab06b7e443",
+          "name": "List persons",
+          "request": {
+            "name": "List persons",
+            "description": {},
+            "url": {
+              "path": [
+                "person",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "efb44ba1-7120-4bd2-9168-3bad92746f25",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "person",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "a2344a54-8836-41a2-8a17-04231b48c5ff",
+      "name": "IPR",
+      "description": {
+        "content": "Intellectual property rights disclosures",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "252c8264-114f-4421-8c42-8bb5e5fee590",
+          "name": "List IPR disclosures",
+          "request": {
+            "name": "List IPR disclosures",
+            "description": {},
+            "url": {
+              "path": [
+                "ipr",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f5f67fb8-8763-45dc-a7f2-4106f9af6e01",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ipr",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "fd36391d-aa37-4961-aa4a-e94827be7c5a",
+      "name": "Submissions",
+      "description": {
+        "content": "Document submissions",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "07aa6902-e517-4fb6-908a-e06e0338faa8",
+          "name": "List document submissions",
+          "request": {
+            "name": "List document submissions",
+            "description": {},
+            "url": {
+              "path": [
+                "submit",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "505317e1-cc60-4a4e-94a7-caf7bcd29bb9",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "submit",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "3722c91f-134f-4902-bdca-f169d3f290fa",
+      "name": "Reference",
+      "description": {
+        "content": "Reference and enumeration values",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "adf125a5-570e-4ffe-a779-7e3163454e3a",
+          "name": "List name/enum reference values",
+          "request": {
+            "name": "List name/enum reference values",
+            "description": {},
+            "url": {
+              "path": [
+                "name",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "765eac58-b35c-458b-843b-c12c5b5a38d4",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "name",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "4c941050-7da7-4f8a-bb6f-9ca60cb305bf",
+      "name": "Liaisons",
+      "description": {
+        "content": "Liaison statements",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1a58860c-5572-4ab7-afdd-52c914ea6679",
+          "name": "List liaison statements",
+          "request": {
+            "name": "List liaison statements",
+            "description": {},
+            "url": {
+              "path": [
+                "liaisons",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "094866c1-2336-4b34-aba2-d309c4fab5a0",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "liaisons",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "091d42c7-08a5-4b56-856c-228eb7071fbc",
+      "name": "Messages",
+      "description": {
+        "content": "Email messages and announcements",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0a9b53a2-93ce-46cd-95e7-a3a2ce283539",
+          "name": "List messages",
+          "request": {
+            "name": "List messages",
+            "description": {},
+            "url": {
+              "path": [
+                "message",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "93abc2ee-5deb-4007-8729-c9d1aa246e06",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "message",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "31e5a9c9-0713-4988-b96f-063a551cbd29",
+      "name": "Reviews",
+      "description": {
+        "content": "Document reviews",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8836cca5-b9e7-4c51-ac21-b55f3db494f5",
+          "name": "List reviews",
+          "request": {
+            "name": "List reviews",
+            "description": {},
+            "url": {
+              "path": [
+                "review",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "17dc51e7-ddbe-4dbc-9efc-4ad0677ed685",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "review",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "84581739-7496-48be-8a50-324fa1d908df",
+      "name": "Stats",
+      "description": {
+        "content": "Statistics resources",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3f636ceb-1d1f-45c9-8a55-0a3a98122653",
+          "name": "Statistics resources",
+          "request": {
+            "name": "Statistics resources",
+            "description": {},
+            "url": {
+              "path": [
+                "stats",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "eb6e464f-fe7d-4d51-afd2-4186d0703f8e",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "stats",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 296,\n    \"next\": \"string\",\n    \"offset\": 6561,\n    \"previous\": \"string\",\n    \"total_count\": 3865\n  },\n  \"objects\": [\n    {\n      \"key_0\": false,\n      \"key_1\": 5289.887534699406,\n      \"key_2\": false,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": true,\n      \"key_1\": 3322\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "76f3fd3c-206a-43f4-a2f1-183d83ccb199",
+    "name": "IETF Datatracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

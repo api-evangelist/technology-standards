@@ -1,0 +1,282 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "IETF Datatracker API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List documents"
+        },
+        {
+          "info": {
+            "name": "List document records",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/document/",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List document records"
+        },
+        {
+          "info": {
+            "name": "List document events",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/docevent/"
+          },
+          "docs": "List document events"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Groups",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List groups (working groups, areas, etc.)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/group/",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List groups (working groups, areas, etc.)"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Meetings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List IETF meetings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/meeting/"
+          },
+          "docs": "List IETF meetings"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "People",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List persons",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/person/"
+          },
+          "docs": "List persons"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "IPR",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List IPR disclosures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/ipr/"
+          },
+          "docs": "List IPR disclosures"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Submissions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List document submissions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/submit/"
+          },
+          "docs": "List document submissions"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reference",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List name/enum reference values",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/name/"
+          },
+          "docs": "List name/enum reference values"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Liaisons",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List liaison statements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/liaisons/"
+          },
+          "docs": "List liaison statements"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Messages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List messages",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/message/"
+          },
+          "docs": "List messages"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reviews",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List reviews",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/review/"
+          },
+          "docs": "List reviews"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Stats",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Statistics resources",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/stats/"
+          },
+          "docs": "Statistics resources"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
