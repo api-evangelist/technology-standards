@@ -131,6 +131,8 @@ apis:
       - type: Specification
         url: https://www.rfc-editor.org/rfc/rfc6749
 common:
+  - type: DomainSecurity
+    url: security/technology-standards-domain-security.yml
   - type: Website
     url: https://www.ietf.org/
   - type: Website
