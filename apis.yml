@@ -131,6 +131,8 @@ apis:
       - type: Specification
         url: https://www.rfc-editor.org/rfc/rfc6749
 common:
+  - type: AgenticAccess
+    url: agentic-access/technology-standards-agentic-access.yml
   - type: DomainSecurity
     url: security/technology-standards-domain-security.yml
   - type: Website
