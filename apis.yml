@@ -1,5 +1,6 @@
 aid: technology-standards
 name: Technology Standards
+kind: topic
 description: >-
   Technology Standards covers the landscape of formal technical standards, protocols, and normative specifications
   developed by international standards bodies including IEEE, IETF, W3C, ISO, OASIS, and the Linux Foundation. These
