@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: IETF Datatracker Documents Groups API
+  description: 'Read-only REST API for the IETF Datatracker, exposing IETF documents,
+
+    working groups, meetings, IPR disclosures, and related metadata.
+
+    '
+  version: 1.0.0
+  contact:
+    name: IETF Datatracker
+    url: https://datatracker.ietf.org/
+servers:
+- url: https://datatracker.ietf.org/api/v1
+  description: IETF Datatracker API root
+tags:
+- name: Groups
+  description: Working groups, research groups, and other IETF groups
+paths:
+  /group/:
+    get:
+      summary: List groups (working groups, areas, etc.)
+      operationId: listGroups
+      tags:
+      - Groups
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: offset
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionResponse'
+components:
+  schemas:
+    CollectionResponse:
+      type: object
+      properties:
+        meta:
+          type: object
+          properties:
+            limit:
+              type: integer
+            next:
+              type: string
+              nullable: true
+            offset:
+              type: integer
+            previous:
+              type: string
+              nullable: true
+            total_count:
+              type: integer
+        objects:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+x-generated-from: https://datatracker.ietf.org/api/v1
+x-generated-by: claude-crawl-2026-05-08
