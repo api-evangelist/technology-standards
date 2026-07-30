@@ -1,4 +1,17 @@
 aid: technology-standards
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/technology-standards.png
 name: Technology Standards
 kind: topic
 description: >-
@@ -21,116 +34,268 @@ tags:
   - Technology Standards
   - W3C
 apis:
-  - aid: technology-standards:ietf-standards
-    name: IETF Internet Standards
-    description: >-
-      The Internet Engineering Task Force (IETF) produces Internet Standards (STDs) and Best Current Practices (BCPs)
-      covering core internet protocols including HTTP, TLS, OAuth, OpenID Connect, JSON, and many more. IETF RFCs form
-      the normative basis for most web API standards. Key API-related RFCs include RFC 9110 (HTTP Semantics), RFC 6749
-      (OAuth 2.0), RFC 7519 (JWT), RFC 7946 (GeoJSON), and RFC 8259 (JSON).
-    humanURL: https://www.ietf.org/
-    baseURL: https://datatracker.ietf.org/api/v1
-    tags:
-      - HTTP
-      - IETF
-      - Internet Standards
-      - OAuth
-      - Protocols
-      - RFC
-      - TLS
-    properties:
-      - type: Documentation
-        url: https://www.ietf.org/standards/
-      - type: Website
-        url: https://www.ietf.org/
-      - type: API
-        url: https://datatracker.ietf.org/api/v1/
-      - url: openapi/technology-standards-openapi.yml
-        type: OpenAPI
-  - aid: technology-standards:w3c-standards
-    name: W3C Web Standards
-    description: >-
-      The World Wide Web Consortium (W3C) leads the World Wide Web to its full potential by developing open standards
-      for web technologies. W3C standards critical to APIs include CORS (Cross-Origin Resource Sharing), Web
-      Authentication (WebAuthn), Linked Data (RDF, JSON-LD), and the Activity Streams vocabulary. The W3C also maintains
-      standards for semantic web technologies including OWL and SPARQL.
-    humanURL: https://www.w3.org/standards/
-    baseURL: https://www.w3.org
-    tags:
-      - CORS
-      - Linked Data
-      - Semantic Web
-      - W3C
-      - Web Standards
-    properties:
-      - type: Documentation
-        url: https://www.w3.org/TR/
-      - type: Website
-        url: https://www.w3.org/
-      - type: GitHub
-        url: https://github.com/w3c
-  - aid: technology-standards:ieee-standards
-    name: IEEE Standards
-    description: >-
-      The Institute of Electrical and Electronics Engineers (IEEE) develops standards for electronics, electrical
-      engineering, and computer science. IEEE standards relevant to APIs and technology include IEEE 802 (networking),
-      IEEE P2510 (IoT data trust), and standards around software engineering lifecycle processes.
-    humanURL: https://standards.ieee.org/
-    baseURL: https://standards.ieee.org
-    tags:
-      - Computer Science
-      - Electrical Engineering
-      - IEEE
-      - Networking
-    properties:
-      - type: Documentation
-        url: https://standards.ieee.org/
-      - type: Website
-        url: https://standards.ieee.org/
-  - aid: technology-standards:oasis-standards
-    name: OASIS Open Standards
-    description: >-
-      OASIS Open is a nonprofit standards development organization that advances the creation, convergence, and adoption
-      of open standards for the global information society. OASIS standards relevant to APIs include SAML (Security
-      Assertion Markup Language), OData (Open Data Protocol), WS-Security, MQTT, AMQP, and OpenDocument.
-    humanURL: https://www.oasis-open.org/
-    baseURL: https://www.oasis-open.org
-    tags:
-      - AMQP
-      - MQTT
-      - OData
-      - OASIS
-      - SAML
-    properties:
-      - type: Documentation
-        url: https://www.oasis-open.org/standards/
-      - type: Website
-        url: https://www.oasis-open.org/
-      - type: GitHub
-        url: https://github.com/oasis-tcs
-  - aid: technology-standards:oauth-openid
-    name: OAuth and OpenID Connect
-    description: >-
-      OAuth 2.0 (RFC 6749) is the industry-standard protocol for authorization, enabling third-party applications to
-      obtain limited access to web services. OpenID Connect (OIDC) is an identity layer built on top of OAuth 2.0 that
-      enables clients to verify the identity of end users and obtain profile information. Together they form the
-      foundation for API security and developer authentication across the modern web.
-    humanURL: https://oauth.net/2/
-    baseURL: https://oauth.net
-    tags:
-      - Authentication
-      - Authorization
-      - Identity
-      - OAuth
-      - OpenID Connect
-      - Security
-    properties:
-      - type: Documentation
-        url: https://oauth.net/2/
-      - type: Website
-        url: https://oauth.net/
-      - type: Specification
-        url: https://www.rfc-editor.org/rfc/rfc6749
+- aid: technology-standards:w3c-standards
+  name: W3C Web Standards
+  description: >-
+    The World Wide Web Consortium (W3C) leads the World Wide Web to its full potential by developing open
+    standards for web technologies. W3C standards critical to APIs include CORS (Cross-Origin Resource
+    Sharing), Web Authentication (WebAuthn), Linked Data (RDF, JSON-LD), and the Activity Streams vocabulary.
+    The W3C also maintains standards for semantic web technologies including OWL and SPARQL.
+  humanURL: https://www.w3.org/standards/
+  baseURL: https://www.w3.org
+  tags:
+  - CORS
+  - Linked Data
+  - Semantic Web
+  - W3C
+  - Web Standards
+  properties:
+  - type: Documentation
+    url: https://www.w3.org/TR/
+  - type: Website
+    url: https://www.w3.org/
+  - type: GitHub
+    url: https://github.com/w3c
+- aid: technology-standards:ieee-standards
+  name: IEEE Standards
+  description: >-
+    The Institute of Electrical and Electronics Engineers (IEEE) develops standards for electronics, electrical
+    engineering, and computer science. IEEE standards relevant to APIs and technology include IEEE 802
+    (networking), IEEE P2510 (IoT data trust), and standards around software engineering lifecycle processes.
+  humanURL: https://standards.ieee.org/
+  baseURL: https://standards.ieee.org
+  tags:
+  - Computer Science
+  - Electrical Engineering
+  - IEEE
+  - Networking
+  properties:
+  - type: Documentation
+    url: https://standards.ieee.org/
+  - type: Website
+    url: https://standards.ieee.org/
+- aid: technology-standards:oasis-standards
+  name: OASIS Open Standards
+  description: >-
+    OASIS Open is a nonprofit standards development organization that advances the creation, convergence,
+    and adoption of open standards for the global information society. OASIS standards relevant to APIs
+    include SAML (Security Assertion Markup Language), OData (Open Data Protocol), WS-Security, MQTT,
+    AMQP, and OpenDocument.
+  humanURL: https://www.oasis-open.org/
+  baseURL: https://www.oasis-open.org
+  tags:
+  - AMQP
+  - MQTT
+  - OData
+  - OASIS
+  - SAML
+  properties:
+  - type: Documentation
+    url: https://www.oasis-open.org/standards/
+  - type: Website
+    url: https://www.oasis-open.org/
+  - type: GitHub
+    url: https://github.com/oasis-tcs
+- aid: technology-standards:oauth-openid
+  name: OAuth and OpenID Connect
+  description: >-
+    OAuth 2.0 (RFC 6749) is the industry-standard protocol for authorization, enabling third-party applications
+    to obtain limited access to web services. OpenID Connect (OIDC) is an identity layer built on top
+    of OAuth 2.0 that enables clients to verify the identity of end users and obtain profile information.
+    Together they form the foundation for API security and developer authentication across the modern
+    web.
+  humanURL: https://oauth.net/2/
+  baseURL: https://oauth.net
+  tags:
+  - Authentication
+  - Authorization
+  - Identity
+  - OAuth
+  - OpenID Connect
+  - Security
+  properties:
+  - type: Documentation
+    url: https://oauth.net/2/
+  - type: Website
+    url: https://oauth.net/
+  - type: Specification
+    url: https://www.rfc-editor.org/rfc/rfc6749
+- aid: technology-standards:technology-standards-documents-api
+  name: Technology Standards Documents API
+  description: Internet-Drafts, RFCs, and document events
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-documents-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-groups-api
+  name: Technology Standards Groups API
+  description: Working groups, research groups, and other IETF groups
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-groups-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-ipr-api
+  name: Technology Standards IPR API
+  description: Intellectual property rights disclosures
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - IPR
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-ipr-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-liaisons-api
+  name: Technology Standards Liaisons API
+  description: Liaison statements
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Liaisons
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-liaisons-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-meetings-api
+  name: Technology Standards Meetings API
+  description: IETF meetings and sessions
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Meetings
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-meetings-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-messages-api
+  name: Technology Standards Messages API
+  description: Email messages and announcements
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Messages
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-messages-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-people-api
+  name: Technology Standards People API
+  description: People in the IETF community
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-people-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-reference-api
+  name: Technology Standards Reference API
+  description: Reference and enumeration values
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Reference
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-reference-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-reviews-api
+  name: Technology Standards Reviews API
+  description: Document reviews
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Reviews
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-reviews-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-stats-api
+  name: Technology Standards Stats API
+  description: Statistics resources
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Stats
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-stats-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
+- aid: technology-standards:technology-standards-submissions-api
+  name: Technology Standards Submissions API
+  description: Document submissions
+  humanURL: https://www.ietf.org/
+  baseURL: https://datatracker.ietf.org/api/v1
+  tags:
+  - Submissions
+  properties:
+  - type: OpenAPI
+    url: openapi/technology-standards-submissions-api-openapi.yml
+  - type: Documentation
+    url: https://www.ietf.org/standards/
+  - type: Website
+    url: https://www.ietf.org/
+  - type: API
+    url: https://datatracker.ietf.org/api/v1/
 common:
   - type: AgenticAccess
     url: agentic-access/technology-standards-agentic-access.yml
