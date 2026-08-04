@@ -1,0 +1,34 @@
+{
+  "provider": "technology-standards",
+  "sources": [
+    "technology-standards-documents-api-openapi.yml",
+    "technology-standards-groups-api-openapi.yml",
+    "technology-standards-ipr-api-openapi.yml",
+    "technology-standards-liaisons-api-openapi.yml",
+    "technology-standards-meetings-api-openapi.yml",
+    "technology-standards-messages-api-openapi.yml",
+    "technology-standards-people-api-openapi.yml",
+    "technology-standards-reference-api-openapi.yml",
+    "technology-standards-reviews-api-openapi.yml",
+    "technology-standards-stats-api-openapi.yml",
+    "technology-standards-submissions-api-openapi.yml"
+  ],
+  "outputs": [
+    "technology-standards-documents-api-openapi.yml",
+    "technology-standards-groups-api-openapi.yml",
+    "technology-standards-ipr-api-openapi.yml",
+    "technology-standards-liaisons-api-openapi.yml",
+    "technology-standards-meetings-api-openapi.yml",
+    "technology-standards-messages-api-openapi.yml",
+    "technology-standards-people-api-openapi.yml",
+    "technology-standards-reference-api-openapi.yml",
+    "technology-standards-reviews-api-openapi.yml",
+    "technology-standards-stats-api-openapi.yml",
+    "technology-standards-submissions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
