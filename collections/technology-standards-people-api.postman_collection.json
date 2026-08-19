@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "618aa573-1142-44db-9fa8-279db11593d0",
+      "name": "People",
+      "description": {
+        "content": "People in the IETF community",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e734ba65-69f0-4a13-b89c-3f8ac061c000",
+          "name": "List persons",
+          "request": {
+            "name": "List persons",
+            "description": {},
+            "url": {
+              "path": [
+                "person",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "38339d58-1ade-4631-980d-f46271a69f9d",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "person",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 547,\n    \"next\": \"string\",\n    \"offset\": 6455,\n    \"previous\": \"string\",\n    \"total_count\": 6787\n  },\n  \"objects\": [\n    {\n      \"key_0\": 4529\n    },\n    {\n      \"key_0\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "08aa78f2-84ea-4577-a280-ec7769e70dcf",
+    "name": "IETF Datatracker Documents People API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "item": [
+    {
+      "id": "5477b9e4-e5f9-4bc8-a515-bb83882c2288",
+      "name": "Groups",
+      "description": {
+        "content": "Working groups, research groups, and other IETF groups",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b2db8644-55fd-4489-8e08-553a6484b863",
+          "name": "List groups (working groups, areas, etc.)",
+          "request": {
+            "name": "List groups (working groups, areas, etc.)",
+            "description": {},
+            "url": {
+              "path": [
+                "group",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "36ae8501-bffd-4a9e-ab32-54fa8ae244b0",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "group",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 7612,\n    \"next\": \"string\",\n    \"offset\": 8737,\n    \"previous\": \"string\",\n    \"total_count\": 3900\n  },\n  \"objects\": [\n    {\n      \"key_0\": 7167,\n      \"key_1\": false,\n      \"key_2\": \"string\",\n      \"key_3\": false\n    },\n    {\n      \"key_0\": 1801\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "25e607b3-6016-4c70-a19a-d15a9382c63c",
+    "name": "IETF Datatracker Documents Groups API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "6e2982ed-b198-4f30-9fa9-5dcb8015d5fe",
+      "name": "IPR",
+      "description": {
+        "content": "Intellectual property rights disclosures",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "870108ea-3b1d-41d2-bcb5-5525ef000122",
+          "name": "List IPR disclosures",
+          "request": {
+            "name": "List IPR disclosures",
+            "description": {},
+            "url": {
+              "path": [
+                "ipr",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a321647b-ab88-4da2-b804-d6f001033f2d",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ipr",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 6630,\n    \"next\": \"string\",\n    \"offset\": 9230,\n    \"previous\": \"string\",\n    \"total_count\": 7118\n  },\n  \"objects\": [\n    {\n      \"key_0\": \"string\"\n    },\n    {\n      \"key_0\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "27258168-6f39-43e8-971d-7a1800042687",
+    "name": "IETF Datatracker Documents IPR API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "e8a1ed88-afe5-4e08-94bb-f078935b159c",
+      "name": "Reference",
+      "description": {
+        "content": "Reference and enumeration values",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "03973771-2a2f-498b-a07a-0ba8b53b733c",
+          "name": "List name/enum reference values",
+          "request": {
+            "name": "List name/enum reference values",
+            "description": {},
+            "url": {
+              "path": [
+                "name",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "10ffe12b-d9e7-40bf-a24e-6cc185c75c99",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "name",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 1771,\n    \"next\": \"string\",\n    \"offset\": 3116,\n    \"previous\": \"string\",\n    \"total_count\": 1098\n  },\n  \"objects\": [\n    {\n      \"key_0\": 3745,\n      \"key_1\": \"string\"\n    },\n    {\n      \"key_0\": \"string\",\n      \"key_1\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "7e4b00a5-1054-47e3-ae6d-10bef8b03ab2",
+    "name": "IETF Datatracker Documents Reference API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

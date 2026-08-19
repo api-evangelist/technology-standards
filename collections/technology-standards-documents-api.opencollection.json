@@ -1,0 +1,80 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "IETF Datatracker Documents API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List documents"
+        },
+        {
+          "info": {
+            "name": "List document records",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/document/",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List document records"
+        },
+        {
+          "info": {
+            "name": "List document events",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/doc/docevent/"
+          },
+          "docs": "List document events"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

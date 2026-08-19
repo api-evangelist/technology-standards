@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "97493531-c4eb-4c2c-a49e-a0c7e6ca4690",
+      "name": "Stats",
+      "description": {
+        "content": "Statistics resources",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "342c2d64-dfe5-481b-9fa5-54dfa7f942b5",
+          "name": "Statistics resources",
+          "request": {
+            "name": "Statistics resources",
+            "description": {},
+            "url": {
+              "path": [
+                "stats",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "81411ca1-eab7-40e5-a91d-09d95066cbbf",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "stats",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 7117,\n    \"next\": \"string\",\n    \"offset\": 4156,\n    \"previous\": \"string\",\n    \"total_count\": 1202\n  },\n  \"objects\": [\n    {\n      \"key_0\": 8092.467367930273,\n      \"key_1\": true\n    },\n    {\n      \"key_0\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "8ddc878e-57a2-47c4-87c7-d2f1c4aa5996",
+    "name": "IETF Datatracker Documents Stats API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

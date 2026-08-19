@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "8e4dc908-b090-4e22-9c51-7a8e3aa2e1d5",
+      "name": "Liaisons",
+      "description": {
+        "content": "Liaison statements",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "55633f83-6b3c-4fb5-bc84-3616c7dc7d3c",
+          "name": "List liaison statements",
+          "request": {
+            "name": "List liaison statements",
+            "description": {},
+            "url": {
+              "path": [
+                "liaisons",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "64777004-f2e6-444f-8f09-67fb1f978c36",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "liaisons",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 8079,\n    \"next\": \"string\",\n    \"offset\": 2793,\n    \"previous\": \"string\",\n    \"total_count\": 9931\n  },\n  \"objects\": [\n    {\n      \"key_0\": true,\n      \"key_1\": 2598.7941340699517\n    },\n    {\n      \"key_0\": false\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "480970c2-7f34-4641-bc7d-498e792b6275",
+    "name": "IETF Datatracker Documents Liaisons API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

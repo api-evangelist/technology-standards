@@ -1,0 +1,101 @@
+{
+  "item": [
+    {
+      "id": "4ac41570-c32a-4882-abc3-9a422d70b274",
+      "name": "Messages",
+      "description": {
+        "content": "Email messages and announcements",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a8a3f9af-d21b-4222-9d82-4a7b35a0415e",
+          "name": "List messages",
+          "request": {
+            "name": "List messages",
+            "description": {},
+            "url": {
+              "path": [
+                "message",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7d04ea6f-7a2b-4739-88b5-7119d9caa11c",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "message",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"meta\": {\n    \"limit\": 9462,\n    \"next\": \"string\",\n    \"offset\": 6501,\n    \"previous\": \"string\",\n    \"total_count\": 2380\n  },\n  \"objects\": [\n    {\n      \"key_0\": 6639.1506534833625,\n      \"key_1\": true\n    },\n    {\n      \"key_0\": 5605\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://datatracker.ietf.org/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "4e51ca56-38f1-4715-a0bd-d3e5d135e903",
+    "name": "IETF Datatracker Documents Messages API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Read-only REST API for the IETF Datatracker, exposing IETF documents,\nworking groups, meetings, IPR disclosures, and related metadata.\n\n\nContact Support:\n Name: IETF Datatracker",
+      "type": "text/plain"
+    }
+  }
+}

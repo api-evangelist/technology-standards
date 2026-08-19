@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "IETF Datatracker Documents Meetings API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Meetings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List IETF meetings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/meeting/"
+          },
+          "docs": "List IETF meetings"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

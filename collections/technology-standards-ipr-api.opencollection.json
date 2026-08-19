@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "IETF Datatracker Documents IPR API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "IPR",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List IPR disclosures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://datatracker.ietf.org/api/v1/ipr/"
+          },
+          "docs": "List IPR disclosures"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
