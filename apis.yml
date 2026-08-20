@@ -110,6 +110,12 @@ apis:
   - Authentication
   - Authorization
   - Identity
+  - OpenID Connect
+  - Security
+  tags_raw:
+  - Authentication
+  - Authorization
+  - Identity
   - OAuth
   - OpenID Connect
   - Security
@@ -142,6 +148,8 @@ apis:
   humanURL: https://www.ietf.org/
   baseURL: https://datatracker.ietf.org/api/v1
   tags:
+  - Group
+  tags_raw:
   - Groups
   properties:
   - type: OpenAPI
@@ -206,6 +214,8 @@ apis:
   humanURL: https://www.ietf.org/
   baseURL: https://datatracker.ietf.org/api/v1
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI
