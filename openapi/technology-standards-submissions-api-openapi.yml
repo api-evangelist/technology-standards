@@ -1,11 +1,9 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: IETF Datatracker Documents Submissions API
+  title: IETF Datatracker Submissions API
   description: 'Read-only REST API for the IETF Datatracker, exposing IETF documents,
 
-    working groups, meetings, IPR disclosures, and related metadata.
-
-    '
+    working groups, meetings, IPR disclosures, and related metadata.'
   version: 1.0.0
   contact:
     name: IETF Datatracker

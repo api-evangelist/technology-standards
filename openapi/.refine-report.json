@@ -1,17 +1,7 @@
 {
   "provider": "technology-standards",
   "sources": [
-    "technology-standards-documents-api-openapi.yml",
-    "technology-standards-groups-api-openapi.yml",
-    "technology-standards-ipr-api-openapi.yml",
-    "technology-standards-liaisons-api-openapi.yml",
-    "technology-standards-meetings-api-openapi.yml",
-    "technology-standards-messages-api-openapi.yml",
-    "technology-standards-people-api-openapi.yml",
-    "technology-standards-reference-api-openapi.yml",
-    "technology-standards-reviews-api-openapi.yml",
-    "technology-standards-stats-api-openapi.yml",
-    "technology-standards-submissions-api-openapi.yml"
+    "_ae-authored/technology-standards-openapi.yml"
   ],
   "outputs": [
     "technology-standards-documents-api-openapi.yml",
@@ -29,6 +19,22 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "technology-standards-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "technology-standards-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-groups-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-ipr-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-liaisons-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-meetings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-messages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-people-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-reference-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-reviews-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-stats-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "technology-standards-submissions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
