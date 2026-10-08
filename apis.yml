@@ -326,6 +326,12 @@ apis:
   - type: API
     url: https://datatracker.ietf.org/api/v1/
 common:
+  - type: Plans
+    url: plans/technology-standards-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/technology-standards-rate-limits.yml
+  - type: FinOps
+    url: finops/technology-standards-finops.yml
   - type: AgenticAccess
     url: agentic-access/technology-standards-agentic-access.yml
   - type: DomainSecurity
